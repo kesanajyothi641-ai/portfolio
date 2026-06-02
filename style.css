@@ -15,6 +15,8 @@
 }
 
 .main{
+    height:100vh;
+    overflow:hidden;
     width:100%;
     min-height:100vh;
     background-color: #0f172a;
@@ -30,7 +32,7 @@
 }
 .navbar{
     display:flex;
-    margin:0 auto;
+    margin: auto;
     padding:20px 0;
     align-items:center;
     justify-content:space-between;
@@ -64,7 +66,6 @@ ul li a:hover{
     color:#0f172a;
     box-shadow:0 0 15px rgba(56,189,248,0.5);
 }
-
 .info{
     margin-left:7%;
     margin-top:6%;
@@ -94,11 +95,11 @@ p{
 }
 
 .image{
+    position:relative;
     width:43%;
     height:35%;
-    position:absolute;
-    right:100px;
-    bottom: 245px;
+    right:5%;
+    bottom:280px;
     
 }
     
@@ -106,13 +107,13 @@ p{
 .image img{
     border-radius:50%;
     background-color:#305367;
-
-    position:absolute;
+    position:relative;
+    
     width:380px;
     height:420px;
-
-    left:20%;
+    left:160%;
     bottom:50px;
+    
 
     object-fit:cover;
 
@@ -122,10 +123,11 @@ p{
     0 0 60px rgba(76,201,240,0.4),
     0 0 120px rgba(76,201,240,0.2);
 }
+
 button{
-    position:absolute;
-    bottom:35%;
-    left:8%;
+    position:relative;
+    bottom:32%;
+    left:7%;
     padding:19px;
     font-size:17px;
     border-radius:30px;
@@ -144,11 +146,13 @@ button:hover{
     color:#ffffff;
     cursor:pointer;
 }
- .icon{
-    position:absolute;
-    bottom:315px;
-    left:400px;
- }
+.icon{
+    position:relative;
+    bottom: 40%;
+    left: 22%;
+    display: flex;
+    gap:15px;
+}
 .icon i{
     font-size:30px;
      color:#e2e8f0;
@@ -348,7 +352,7 @@ footer p{
     color:#ffffff;
 }
 
-/* Twinkle Effect */
+
 
 .head h1{
     animation: twinkle 1.5s infinite alternate;
